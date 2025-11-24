@@ -54,6 +54,7 @@ public class ProductController {
     	Product product = productService.getProductById(id).orElseThrow();
     	
     	product.setName(productdata.getName());
+        // inside setName
     	product.setTagline(productdata.getTagline());
     	product.setPrice(productdata.getPrice());
     	
